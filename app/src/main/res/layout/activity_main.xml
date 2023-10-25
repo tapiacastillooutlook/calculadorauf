@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/valorUF"
+        android:layout_width="297dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:text="0,00"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <DatePicker
+        android:id="@+id/fechaSpinner"
+        android:layout_width="303dp"
+        android:layout_height="142dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <TextView
+        android:id="@+id/fechaConsulta"
+        android:layout_width="160dp"
+        android:layout_height="33dp"
+        android:text="Fecha de Hoy"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <Button
+        android:id="@+id/calcularButton"
+        android:layout_width="281dp"
+        android:layout_height="40dp"
+        android:soundEffectsEnabled="false"
+        android:text="Calcular"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <EditText
+        android:id="@+id/editNumero"
+        android:layout_width="287dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Ingrese Cantidad de U.F. "
+        android:inputType="number"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+        android:id="@+id/calculoTotal"
+        android:layout_width="178dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="136dp"
+        android:shadowColor="@color/black"
+        android:text="0,0"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mensaje_resultado_pesos"
+        android:layout_width="264dp"
+        android:layout_height="40dp"
+        android:text="Valor en CL$ de las UF ingresadas "
+        android:textAlignment="center"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="521dp" />
+
+    <TextView
+        android:id="@+id/Mensaje_Uf_hoy"
+        android:layout_width="225dp"
+        android:layout_height="24dp"
+        android:text="Valor de la U.F. hoy"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="122dp" />
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_width="388dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="CALCULADORA U.F A PESOS (CL$)"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mensaje_ingreso_fecha"
+        android:layout_width="243dp"
+        android:layout_height="29dp"
+        android:text="Seleccione Fecha para la U.F."
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="221dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
